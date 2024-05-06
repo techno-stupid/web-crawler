@@ -24,13 +24,15 @@ This is a Go web scraping project designed to extract information from web pages
 
    ```sh
    cd web-crawler
+3. Download chrome driver from [Here](https://googlechromelabs.github.io/chrome-for-testing) and put it in `driver` directory
 
-3. Install dependencies:
+
+4. Install dependencies:
 
    ```sh
    go mod tidy
 
-4. Build the application:
+5. Build the application:
 
    ```sh
    go build
@@ -41,4 +43,4 @@ This is a Go web scraping project designed to extract information from web pages
    ```sh
    go run main.go
    
-2. The program will  scrape data from the specified URL and output it in `.xlsx` format.
+2. The program will scrape data from the specified URL and output it in `.xlsx` format in Find the extracted data in the `output` directory.
