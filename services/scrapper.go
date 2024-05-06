@@ -11,8 +11,8 @@ import (
 
 const (
 	baseURL      = "https://shop.adidas.jp"
-	productCount = 2
-	totalPages   = 1
+	productCount = 250
+	totalPages   = 3
 )
 
 func RetrieveProductIDs(driver selenium.WebDriver) []string {
