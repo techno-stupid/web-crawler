@@ -13,6 +13,7 @@ const (
 	baseURL          = "https://shop.adidas.jp"
 	chromeDriverPath = "./driver/chromedriver.exe"
 	port             = 4444
+	host             = "http://127.0.0.1:"
 )
 
 func main() {
@@ -58,7 +59,7 @@ func createWebDriver(port int) selenium.WebDriver {
 			},
 		},
 	)
-	wd, err := selenium.NewRemote(caps, "http://127.0.0.1:"+strconv.Itoa(port)+"/wd/hub")
+	wd, err := selenium.NewRemote(caps, host+strconv.Itoa(port)+"/wd/hub")
 	if err != nil {
 		log.Fatalf("Failed to create WebDriver: %v", err)
 	}
